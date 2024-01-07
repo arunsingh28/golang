@@ -13,7 +13,13 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 
 	input, _ := reader.ReadString('\n')
-	fmt.Println("Hello", input, "Your rating is ", random())
+	var sytmRating = random()
+
+	fmt.Println("Hello", input, "Your rating is ", sytmRating)
+
+	fmt.Printf("type of input is %T", input)
+
+	fmt.Printf("New Rating from admin is %T", string(sytmRating)+"Arun")
 
 }
 
